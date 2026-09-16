@@ -3,54 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receipt Generator</title>
+    <title>ICE CREAM</title>
 
     <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css" />
     <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
 
-
 </head>
 <body>
-    
+
     <h1>ICE CREAM SHOP</h1>
     <br>
     <form>
-        
         <label for="choose">Choose:</label>
         <br>
-
-        <input type="checkbox" id="item1" value="50">
+        
+        <input type="checkbox" id="item1" value="65">
         <label for="item1">Chocolate</label>
         <br>
-
-        <input type="checkbox" id="item2" value="45">
+        <input type="checkbox" id="item2" value="55">
         <label for="item2">Strawberry</label>
         <br>
-
-        <input type="checkbox" id="item3" value="40">
+        <input type="checkbox" id="item3" value="45">
         <label for="item3">Vanilla</label>
         <br>
+        <input type="checkbox" id="item4" value="75">
+        <label for="item4">Mint</label>
+        <br> 
 
-        <input type="checkbox" id="item4" value="35">
-        <label for="item4">Cookies and Cream</label>
-        <br>
-
-        <input type="checkbox" id="item5" value="55">
-        <label for="item5">Cotton Candy</label>
-        <br>
-
-        <br>
         <label for="choose">Choose:</label>
         <br>
         <input type="radio" id="regular" value="0" name="size">
         <label for="regular">Regular (+Php 0)</label>
         <br>
         <input type="radio" id="upsize" value="30" name="size">
-        <label for="upsize">Upsize (+Php 15)</label>
+        <label for="upsize">Upsize (+Php 30)</label>
 
         <button type="button" py-click="create_order">Create Order</button>
         <br>
         <br>
+        <label for="options">Select Coffee</label>
+        <br>
+        <select id="coffee">
+            <option value="0">Choose an option</option>
+            <option value="99">Americano</option>
+            <option value="129">Spanish Latte</option>
+            <option value="159">Cappuccino</option>
+        </select>
+        <br>
+        <button type="button" py-click="place_order">Place Order</button>
+        <br>
+
+        <br>
+        <button type="button" py-click="show_order">Show Order</button>
 
     </form>
 
