@@ -8,10 +8,10 @@ def create_order(e):
     prod3=document.getElementById("item3") #get item 3 value
     prod4=document.getElementById("item4") #get item 4 value
     #Calculate
-    subtotal= float(prod1.value) * prod1.checked
-    subtotal += float(prod2.value) * prod2.checked
-    subtotal += float(prod3.value) * prod3.checked
-    subtotal += float(prod4.value) * prod4.checked
+    subtotal = float(prod1.value) * prod1.checked
+    subtotal = float(prod2.value) * prod2.checked
+    subtotal = float(prod3.value) * prod3.checked
+    subtotal = float(prod4.value) * prod4.checked
     size = document.querySelector("input[name='size']:checked")
     price = float(size.value)
     grandtotal = subtotal + price
@@ -28,7 +28,13 @@ def show_order(e):
     document.getElementById("output4").innerHTML = ""
     # clears previous result
     prod1=document.getElementById("item1") #get item 1 id
+    prod2=document.getElementById("item2") #get item 2 id
+    prod3=document.getElementById("item3") #get item 3 id
+    prod4=document.getElementById("item4") #get item 4 id
     subtotal= float(prod1.value) * prod1.checked
+    subtotal += float(prod2.value) * prod2.checked
+    subtotal += float(prod3.value) * prod3.checked
+    subtotal += float(prod4.value) * prod4.checked
     size = document.querySelector("input[name='size']:checked")
     price = float(size.value)
     grandtotal = subtotal + price
